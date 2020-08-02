@@ -1,156 +1,43 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Responsive Layout</title>
-<style>
-
-/********** Base styles **********/
-* {
-  box-sizing: border-box;
-}
-h1 {
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-div{
-  margin-left: 16px;
-}
-
-p {
-  text-align: justify;
-  background-color: #A52A2A;
-  border: 1px solid black;
-  width: 90%;
-  height: 150px;
-  margin-left: auto;
-  font-family: Helvetica;
-  margin-right: auto;
-  color: white;
-}
-
-/* Simple Responsive Framework. */
-.row {
-  width: 100%;
-}
-
-/********** Large devices only **********/
-@media (min-width: 992px) {
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
-    float: left;
-    border: 1px solid green;
-  }
-  .col-lg-1 {
-    width: 8.33%;
-  }
-  .col-lg-2 {
-    width: 16.66%;
-  }
-  .col-lg-3 {
-    width: 25%;
-  }
-  .col-lg-4 {
-    width: 33.33%;
-  }
-  .col-lg-5 {
-    width: 41.66%;
-  }
-  .col-lg-6 {
-    width: 50%;
-  }
-  .col-lg-7 {
-    width: 58.33%;
-  }
-  .col-lg-8 {
-    width: 66.66%;
-  }
-  .col-lg-9 {
-    width: 74.99%;
-  }
-  .col-lg-10 {
-    width: 83.33%;
-  }
-  .col-lg-11 {
-    width: 91.66%;
-  }
-  .col-lg-12 {
-    width: 100%;
-  }
-}
-
-/********** Medium devices only **********/
-@media (min-width: 768px) and (max-width: 992px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-    float: left;
-    border: 1px solid green;
-  }
-  .col-md-1 {
-    width: 8.33%;
-  }
-  .col-md-2 {
-    width: 16.66%;
-  }
-  .col-md-3 {
-    width: 25%;
-  }
-  .col-md-4 {
-    width: 33.33%;
-  }
-  .col-md-5 {
-    width: 41.66%;
-  }
-  .col-md-6 {
-    width: 50%;
-  }
-  .col-md-7 {
-    width: 58.33%;
-  }
-  .col-md-8 {
-    width: 66.66%;
-  }
-  .col-md-9 {
-    width: 74.99%;
-  }
-  .col-md-10 {
-    width: 83.33%;
-  }
-  .col-md-11 {
-    width: 91.66%;
-  }
-  .col-md-12 {
-    width: 100%;
-  }
-}
-
-</style>
-</head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>David Chu's China Bistro</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  </head>
 <body>
-<h1>Our Menu</h1>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="pull-left visible-md visible-lg">
+            <div id="logo-img"></div>
+          </a>
 
-<div class="row">
+          <div class="navbar-brand">
+            <a href="index.html"><h1>David Chu's China Bistro</h1></a>
+            <p>
+              <img src="images/star-k-logo.png" alt="Kosher certification">
+              <span>Kosher Certified</span>
+            </p>
+          </div>
 
-  <section class="col-lg-4 col-md-6">
-    <div class="title">Chicken</div>
-    <p class="content">Blue cheese crumbles. Sliced juicy red onion. 
-      Boneless chicken breasts marinated in Buffalo Wings Sauce and blue cheese dressing. 
-      Nothing says "eat me" more than this spicy chicken sandwich recipe infused with hot buffalo flavor.</p>
-  </section>
 
-  <section class="col-lg-4 col-md-6">
-    <div class="title">Beef</div>
-    <p class="content">Typically cooked low and slow, these boneless short ribs get perfectly tender on the grill. 
-      A quick brush with fish sauce adds a layer of umami, while the brown sugar rub provides a shortcut to charred flavor.</p>   
-  </section>
+        </div>
+      </div>
+    </nav>
 
-  <section class="col-lg-4 col-md-12">
-    <div class="title">Sushi</div>
-    <p class="content">The term sushi actually refers to foods that use a type of rice seasoned with vinegar and are garnished with raw fish or vegetable. 
-      The sushi rolls (maki) that you may be imagining are just one of many types of sushi. </p>
-  </section>
+  </header>
 
-</div>
 
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
