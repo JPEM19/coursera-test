@@ -1,48 +1,60 @@
-body {
-    font-size: 16px;
-    color: #fff;
-    background-color: #61122f;
-    font-family: 'Oxygen', sans-serif;
+body{
+  color: #fff;
+  background-color: #c17400;
+}
+
+p{
+  text-align: justify;
+}
+
+.navbar-light .navbar-brand {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.nav-link{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+li > a:hover{
+  background-color: #e7e7e7;
+}
+
+@media (max-width: 575px){
+  .col-xs-12{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
   }
   
-  /** HEADER **/
-  #header-nav {
-    background-color: #f6b319;
-    border-radius: 0;
-    border: 0;
-  }
-  
-  #logo-img {
-    background: url('../images/restaurant-logo_large.png') no-repeat;
-    width: 150px;
-    height: 150px;
-    margin: 10px 15px 10px 0;
-  }
-  
-  .navbar-brand {
-    padding-top: 25px;
-  }
-  
-  .navbar-brand h1 { /* Restaurant name */
-    font-family: 'Lora', serif;
-    color: #557c3e;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px #222;
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: .75;
-  }
-  .navbar-brand a:hover, .navbar-brand a:focus {
-    text-decoration: none;
-  }
-  .navbar-brand p { /* Kosher cert */
-    color: #000;
-    text-transform: uppercase;
-    font-size: .7em;
-    margin-top: 15px;
-  }
-  .navbar-brand p span { /* Star-K */
-    vertical-align: middle;
-  }
+}
+
+.navbar-nav{
+  margin: 0 -16px -8px -16px;
+}
+
+section{
+  background-color: #085579;
+  padding: 15px;
+  border: 2px solid black;
+  margin-bottom: 20px;
+}
+
+p + p{
+  text-align: right;
+}
+
+p > a:hover{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+p > a{
+  font-size: 18px;
+}
